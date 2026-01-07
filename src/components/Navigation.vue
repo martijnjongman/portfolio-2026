@@ -17,7 +17,7 @@ let showMenu = ref(false)
       <button
         @click="showMenu = !showMenu"
         id="toggle-menu"
-        class="w-14 lg:w-16 aspect-square p-5 cursor-pointer"
+        class="w-16 aspect-square p-6 cursor-pointer"
         aria-label="toggle-menu"
       >
         <svg viewBox="0 0 14 14" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
