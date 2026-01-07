@@ -79,10 +79,10 @@ onMounted(async () => {
   <section id="hero-gallery" ref="sectionRef" class="relative w-full overflow-hidden lg:h-screen">
     <div
       ref="containerRef"
-      class="relative flex flex-col px-4 mt-14 h-full w-full lg:flex-row lg:w-fit lg:items-center lg:px-[20vw]"
+      class="relative flex flex-col px-4 mt-16 h-full w-full lg:flex-row lg:w-fit lg:items-center lg:px-[20vw]"
     >
       <div class="group flex flex-col mb-6 lg:absolute lg:left-2 lg:top-40">
-        <figure class="w-[25vh] shrink-0 mb-2 overflow-hidden relative">
+        <figure class="w-[50vw] max-w-2xs shrink-0 mb-2 overflow-hidden relative">
           <img
             src="../assets/images/portret.png"
             class="w-full aspect-square object-cover lg:grayscale-100 group-hover:grayscale-0 transition"
