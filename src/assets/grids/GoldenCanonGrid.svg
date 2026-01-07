@@ -1,0 +1,25 @@
+<svg viewBox="0 0 960 541" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="959" height="539" transform="translate(0.914062 0.909241)" fill="#37393E"/>
+<path d="M0.999428 1.20427L959.828 539.614" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M480.207 1.20427L960.12 539.614" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M0.999428 539.613L959.828 0.705907" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M0.706441 1.20354L479.622 539.116" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M0.706745 539.614L480.121 1.20422" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M0.706745 270.307L480.121 539.512" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M1.20668 270.012L480.224 0.990171" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M480.207 0.807214L960.12 270.012" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M480.207 539.512L960.12 270.307" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M480.207 539.613L960.12 0.705924" stroke="#EADE77" stroke-linecap="square"/>
+<path d="M800.332 0.909241V539.909" stroke="#EADE77"/>
+<path d="M720.14 0.909241V539.909" stroke="#EADE77"/>
+<path d="M639.996 0.909241V539.909" stroke="#EADE77"/>
+<path d="M480.164 0.909241V539.909" stroke="#EADE77"/>
+<path d="M320.332 0.909241V539.909" stroke="#EADE77"/>
+<path d="M240.664 0.909241V539.909" stroke="#EADE77"/>
+<path d="M160.496 0.909241V539.909" stroke="#EADE77"/>
+<path d="M0.914062 404.597H0.414062V405.597H0.914062V405.097V404.597ZM0.914062 405.097V405.597H959.914V405.097V404.597H0.914062V405.097Z" fill="#EADE77"/>
+<path d="M0.914062 359.68H0.414062V360.68H0.914062V360.18V359.68ZM0.914062 360.18V360.68H959.914V360.18V359.68H0.914062V360.18Z" fill="#EADE77"/>
+<path d="M0.914062 269.847H0.414062V270.847H0.914062V270.347V269.847ZM0.914062 270.347V270.847H959.914V270.347V269.847H0.914062V270.347Z" fill="#EADE77"/>
+<path d="M0.914062 180.013H0.414062V181.013H0.914062V180.513V180.013ZM0.914062 180.513V181.013H959.914V180.513V180.013H0.914062V180.513Z" fill="#EADE77"/>
+<path d="M0.914062 135.41H959.914" stroke="#EADE77"/>
+</svg>

@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-off-white: #f0efe7;
+  --color-gold: #eade77;
+  --color-dark: #37393e;
+
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Clash Grotesk', sans-serif;
+}
+
+body {
+  @apply bg-off-white min-h-screen font-sans;
+}
+
+section {
+  @apply mb-10 lg:mb-20 scroll-smooth scroll-m-16 lg:scroll-m-24;
+}
+
+.gsap-parallax-showcase {
+  cursor:
+    url('./assets/icons/arrow-up-right.svg') 40 40,
+    auto;
+}
+
+.gsap-parallax-text {
+  font-size: clamp(2rem, 20vw, 30rem);
+}
+
+.gsap-parallax-text::after {
+  content: '';
+  @apply hidden lg:block absolute -z-10 top-8 lg:top-32 -right-4 w-[8vw] aspect-video bg-gold;
+}
+
+.h2-title::after {
+  content: '';
+  @apply absolute -z-10 top-0 lg:top-4 -right-4 block w-12 aspect-video bg-gold;
+}
