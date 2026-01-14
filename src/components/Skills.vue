@@ -1,4 +1,5 @@
 <script setup>
+// Imports
 import { onMounted } from 'vue'
 import gsap from 'gsap'
 
@@ -51,17 +52,15 @@ onMounted(() => {
 
 <template>
   <section id="skills" class="overflow-x-hidden px-4 pb-10">
-    <div class="w-full lg:w-4xl mx-auto">
-      <h2 class="h2-title relative font-serif text-4xl lg:text-7xl mb-4 lg:mb-8 w-fit xl:-ml-40">
-        Skills & Knowledge
-      </h2>
+    <div class="w-full mx-auto lg:w-4xl">
+      <h2 class="h2-title lg:mb-8 xl:-ml-40">Skills & Knowledge</h2>
 
-      <div class="flex flex-col lg:flex-row gap-8 lg:gap-0">
-        <div v-for="category in skillCategories" class="w-full lg:w-1/2 flex flex-col">
-          <h3 class="text-sm lg:text-xl mb-2">{{ category.title }}</h3>
+      <div class="flex flex-col gap-8 lg:flex-row lg:gap-0">
+        <div v-for="category in skillCategories" class="w-full flex flex-col lg:w-1/2">
+          <h3 class="text-sm mb-2 lg:text-xl">{{ category.title }}</h3>
           <ul>
             <li
-              class="skill-item border-black/25 border-t py-2 lg:py-4 text-xl lg:text-3xl last:border-b"
+              class="skill-item border-black/25 border-t py-2 text-xl last:border-b lg:py-4 lg:text-3xl"
               v-for="skill in category.skills"
               :key="skill"
             >

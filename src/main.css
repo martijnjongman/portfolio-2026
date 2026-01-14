@@ -9,6 +9,7 @@
   --font-sans: 'Clash Grotesk', sans-serif;
 }
 
+/* General */
 body {
   @apply bg-off-white min-h-screen font-sans;
 }
@@ -17,6 +18,27 @@ section {
   @apply mb-10 lg:mb-20 scroll-smooth scroll-m-16 lg:scroll-m-24;
 }
 
+h2 {
+  @apply relative w-fit font-serif text-4xl lg:text-7xl mb-4;
+}
+
+h3 {
+  @apply text-xl lg:text-3xl font-serif font-medium;
+}
+
+.tag {
+  @apply text-xs uppercase whitespace-nowrap lg:text-sm;
+}
+
+button {
+  @apply transition-all;
+}
+
+a {
+  @apply cursor-pointer;
+}
+
+/* Parallax */
 .gsap-parallax-showcase {
   cursor:
     url('./assets/icons/arrow-up-right.svg') 40 40,
@@ -24,9 +46,10 @@ section {
 }
 
 .gsap-parallax-text {
-  font-size: clamp(2rem, 20vw, 30rem);
+  font-size: clamp(2rem, 18vw, 24rem);
 }
 
+/* Pseudo's */
 .gsap-parallax-text::after {
   content: '';
   @apply hidden lg:block absolute -z-10 top-8 lg:top-32 -right-4 w-[8vw] aspect-video bg-gold;

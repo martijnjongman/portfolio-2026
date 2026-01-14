@@ -8,16 +8,14 @@ let showMenu = ref(false)
 <template>
   <header class="fixed z-30 top-0">
     <div
-      class="z-20 relative w-screen bg-off-white lg:bg-transparent flex justify-between items-center lg:px-10 lg:py-8"
+      class="z-20 relative flex justify-between items-center w-screen bg-off-white lg:px-10 lg:py-8 lg:bg-transparent"
     >
-      <a href="/" class="uppercase font-sans font-medium text-sm ml-5 lg:text-lg cursor-pointer"
-        >Martijn Jongman | Portfolio</a
-      >
+      <a href="/" class="ml-5 uppercase font-sans font-medium text-sm">Martijn Jongman</a>
 
       <button
         @click="showMenu = !showMenu"
         id="toggle-menu"
-        class="w-16 aspect-square p-6 cursor-pointer"
+        class="size-16 p-6 cursor-pointer hover:bg-gold"
         aria-label="toggle-menu"
       >
         <svg viewBox="0 0 14 14" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -56,35 +54,33 @@ let showMenu = ref(false)
       <nav
         v-if="showMenu"
         aria-label="menu"
-        class="z-10 fixed inset-0 w-screen h-screen py-14 lg:py-28 bg-off-white"
+        class="z-10 fixed inset-0 w-screen h-screen py-14 bg-off-white lg:py-28"
       >
-        <ul class="flex flex-col h-full items-center justify-center gap-6 font-serif font-medium">
-          <li class="relative text-3xl lg:text-6xl">
-            <a
-              @click="showMenu = !showMenu"
-              href="#hero-gallery"
-              class="hover:underline cursor-pointer"
-            >
+        <ul
+          class="flex flex-col h-full items-center justify-center gap-6 font-serif font-medium text-3xl lg:text-6xl"
+        >
+          <li class="relative">
+            <a @click="showMenu = !showMenu" href="#hero-gallery" class="hover:underline">
               Gallery
-              <span class="absolute -right-4 -top-4 lg:-right-8">1</span>
+              <span class="number">1</span>
             </a>
           </li>
-          <li class="relative text-3xl lg:text-6xl">
-            <a @click="showMenu = !showMenu" href="#skills" class="hover:underline cursor-pointer">
+          <li class="relative">
+            <a @click="showMenu = !showMenu" href="#skills" class="hover:underline">
               Skills & Knowledge
-              <span class="absolute -right-4 -top-4 lg:-right-8">2</span>
+              <span class="number">2</span>
             </a>
           </li>
-          <li class="relative text-3xl lg:text-6xl">
-            <a @click="showMenu = !showMenu" href="#story" class="hover:underline cursor-pointer">
+          <li class="relative">
+            <a @click="showMenu = !showMenu" href="#story" class="hover:underline">
               My Story
-              <span class="absolute -right-4 -top-4 lg:-right-8">3</span>
+              <span class="number">3</span>
             </a>
           </li>
-          <li class="relative text-3xl lg:text-6xl">
-            <a @click="showMenu = !showMenu" href="#footer" class="hover:underline cursor-pointer">
+          <li class="relative">
+            <a @click="showMenu = !showMenu" href="#footer" class="hover:underline">
               Contact
-              <span class="absolute -right-4 -top-4 lg:-right-8">4</span>
+              <span class="number">4</span>
             </a>
           </li>
         </ul>
@@ -92,3 +88,10 @@ let showMenu = ref(false)
     </Transition>
   </header>
 </template>
+
+<style>
+@reference "tailwindcss";
+.number {
+  @apply absolute -right-4 -top-4 lg:-right-8;
+}
+</style>

@@ -1,6 +1,6 @@
 <script setup>
+//Import Vue & Components
 import { onMounted, ref } from 'vue'
-//Import Components
 import Navigation from './components/Navigation.vue'
 import HeroGallery from './components/HeroGallery.vue'
 import Skills from './components/Skills.vue'
@@ -20,7 +20,8 @@ const mainContent = ref(null)
 onMounted(() => {
   gsap.from(mainContent.value, {
     opacity: 0,
-    duration: 0.6,
+    delay: 0.1,
+    duration: 0.3,
     ease: 'power2.out',
   })
 })

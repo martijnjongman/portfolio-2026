@@ -22,14 +22,10 @@ onMounted(() => {
 <template>
   <section
     id="story"
-    class="container mx-auto px-4 lg:px-0 flex flex-col lg:flex-row lg:justify-between"
+    class="container mx-auto px-4 flex flex-col lg:flex-row lg:justify-between lg:px-0"
   >
     <div class="w-full lg:w-4xl mx-auto">
-      <h2
-        class="gsap-story h2-title relative font-serif text-4xl lg:text-7xl mb-4 lg:mb-8 w-fit xl:-ml-40"
-      >
-        My Story
-      </h2>
+      <h2 class="gsap-story h2-title lg:mb-8 xl:-ml-40">My Story</h2>
 
       <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
         <p class="gsap-story text-lg lg:text-xl">

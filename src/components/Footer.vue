@@ -1,6 +1,6 @@
 <template>
   <footer id="footer" class="flex flex-col items-center pt-16 bg-dark text-white">
-    <h2 class="font-serif mb-8 text-5xl lg:text-7xl">Let's connect</h2>
+    <h2>Let's connect</h2>
     <a
       href="https://www.linkedin.com/in/martijn-jongman/"
       target="_blank"
